@@ -18,10 +18,12 @@ public class CalcPi {
             sum += term;
         }
 
-        double approxPi = sum * 4; // multiply by 4 to get pi
+		// multiply by 4 to get pi
+        double approxPi = sum * 4;
+		
 
         // Print results
         System.out.println("pi according to Java: " + Math.PI);
-        System.out.println("pi, approximated: " + approxPi);
+        System.out.println("pi, approximated:     " + approxPi);
 	}
 }

@@ -7,7 +7,7 @@ public class Collatz {
 
         for (int seed = 1; seed <= N; seed++) {
             int current = seed;
-            int steps = 1;
+            int steps = 0;
 
             if (mode.equals("v")) {
                 System.out.print(current);
@@ -26,8 +26,8 @@ public class Collatz {
                 }
             }
 
+			steps++;
             if (mode.equals("v")) {
-                steps++; // include the initial number
                 System.out.println(" (" + steps + ")");
             }
         }

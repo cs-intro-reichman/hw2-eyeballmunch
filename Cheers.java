@@ -13,14 +13,18 @@ public class Cheers {
         // Loop through each letter and print "Give me a/an <letter>: <letter>!"
         for (int i = 0; i < word.length(); i++) {
             char ch = word.charAt(i);
-            String article = "a  ";
+            String article ;
+            
 
             if (anLetters.indexOf(ch) != -1) {
-                article = "an ";
+                article = "an";
+                System.out.println("Give me " + article + " " + ch + ": " + ch + "!");
+            }else {
+                article = "a";    // no space here
+                System.out.println("Give me " + article + "  " + ch + ": " + ch + "!");
             }
 
-            // Exactly one space between article and letter
-            System.out.println("Give me " + article + " " + ch + ": " + ch + "!");
+          
         }
 
         // Print "What does that spell?"

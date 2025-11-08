@@ -13,10 +13,10 @@ public class Cheers {
         // Loop through each letter and print "Give me a/an <letter>: <letter>!"
         for (int i = 0; i < word.length(); i++) {
             char ch = word.charAt(i);
-            String article = "a";
+            String article = "a  ";
 
             if (anLetters.indexOf(ch) != -1) {
-                article = "an";
+                article = "an ";
             }
 
             // Exactly one space between article and letter
